@@ -18,6 +18,8 @@ I'm going to attempt making a blog from scratch that I can hopefully attach to m
   - this creates express MVC like subdirectories with session, stylus, and ejs
 4. `express --css jade`
   - forgot to add jade (:
+5. Install nodemon to watch for changes to the application while it's running
+  - `npm install -g nodemon`
 
 ## Notes
 + section.. tba
@@ -44,6 +46,14 @@ I'm going to attempt making a blog from scratch that I can hopefully attach to m
   	
 ## Questions
 + here
+
+## Goals 
++ Integrate blog with personal web site and portfolio
++ Labs section
+  - Blog by itself
+  - Stock Brackets 
+  - 2 Person mobile tic tac toe
+    - use socket IO 
 
   
 <br> 

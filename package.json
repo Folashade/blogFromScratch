@@ -1,6 +1,7 @@
 {
   "name": "foo-scratch",
   "subdomain": "foo-scratch",
+  "private": "true",
   "scripts": {
     "start": "app.js"
   },
@@ -17,3 +18,4 @@
     "jade": "*"
   }
 }
+
