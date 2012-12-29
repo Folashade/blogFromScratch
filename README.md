@@ -2,7 +2,8 @@ A Blog From Scratch
 ===================
   
 ----
-:construction_worker: UNDER CONSTRUCTION :exclamation:
+:construction: UNDER CONSTRUCTION :exclamation:
+:vertical_traffic_light: STATUS: Setting Up Environment
 
 ----
 
@@ -13,7 +14,8 @@ I'm going to attempt making a blog from scratch that I can hopefully attach to m
 ### Setting Up the Environment
 1. Make _package.json_ file creating dependencies (Mongoose, Express, EJS, etc.. )
   - The private flag ensures that our site doesn't get accidentally published to the npm directory.
-2. `npm install`
+2. install all dependencies set up in _package.json_
+  - `npm install`
 3. `express --sessions --css stylus --ejs`
   - this creates express MVC like subdirectories with session, stylus, and ejs
 4. `express --css jade`
@@ -22,7 +24,17 @@ I'm going to attempt making a blog from scratch that I can hopefully attach to m
   - `npm install -g nodemon`
 
 ## Notes
-+ section.. tba
++ APP.JS
+
+### Order Of Operations
+1. User navigates to a URL
+2. Browser sends the get request to the application (siteurl.com/users)
+3. then _app.js_ (which is like the route file) handles the get request
+  - app.get('/url', function); **_example:_** _app.get('/users', user.list);_
+    - user.list
+      - user = a variable set up in the begininng of _app.js_ that links to a javascript file in the _/routes_ folder (_user.js_)
+      - list = a function that was set up in _/routes/user.js_ and **exported** to be used other places
+        - this function takes a request (don't know what to do with that yet) and a response and can do a few things (send, render, & other things i don't know yet)
   
 ## Resources Used
 - [Express Tutorial](http://expressjs.com/guide.html)
@@ -33,6 +45,7 @@ I'm going to attempt making a blog from scratch that I can hopefully attach to m
 ### Other Things I came across...
 #### Development
 - [Express Node Structure](http://dailyjs.com/2012/01/26/effective-node-modules/)
+- [Understanding Resources](http://www.mattpalmerlee.com/2012/11/09/getting-started-with-node-js-express-and-jade-using-the-webstorm-ide/)
 
 #### Design
 - [Gemojis](https://github.com/github/gemoji)
@@ -46,6 +59,7 @@ I'm going to attempt making a blog from scratch that I can hopefully attach to m
   	
 ## Questions
 + here
+
 
 ## Goals 
 + Integrate blog with personal web site and portfolio
